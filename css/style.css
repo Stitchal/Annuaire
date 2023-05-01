@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&family=Poppins:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    
+    background: linear-gradient(#2F4457, #425b72);
+    /*background:#425b72;*/
+}
+
+.form-container{
+    width: 100vw;
+}
+
+.input-box {
+    z-index: 5;
+    display: flex;
+    position: relative;
+    height: 76px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    top: 70px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-box i,
+.input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box i {
+    left: 20px;
+    font-size: 30px;
+    color: #707070;
+}
+
+.input-box select {
+    z-index: 0;
+    width: auto;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 0 0 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+    outline: 0;
+}
+
+
+.input-box select:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    filter: brightness(95%);
+    -webkit-filter: brightness(95%);
+}
+
+.input-box select:focus {
+    transition: 0.2s;
+    cursor: pointer;
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+}
+
+.input-box select:hover:focus {
+    cursor: pointer;
+}
+
+.input-box select:focus:hover {
+    cursor: pointer;
+    color: #2F4457;
+}
+
+select:hover option:checked,
+select:focus option:checked,
+body {
+    color: #C96567;
+}
+
+
+
+.input-box input {
+    transition: 0.2s;
+    height: 100%;
+    width: 200%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 15px;
+    background-color: transparent;
+}
+
+
+.input-box input:hover{
+    transition: 0.2s;
+    background: #F2F2F2;
+    border-radius: 0 8px 8px 0;
+}
+
+.input-box input:focus{
+    transition: 0.2s;
+    background: #e4e4e4;
+    border-radius: 0 8px 8px 0;
+}
+
+.input-box .button {
+    right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    transition: 0.2s;
+    background-color: #C96567;
+    cursor: pointer;
+}
+
+.input-box .button:hover{
+    transition: 0.2s;
+    background-color: #b85e60;
+}
+
+.input-box .button:after {
+    display: block;
+    content: "";
+    border-top: 2px solid #ffffff;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    -webkit-transition: transform 250ms ease-in-out;
+    -moz-transition: transform 250ms ease-in-out;
+    -ms-transition: transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out;
+}
+
+.input-box .button:hover:after {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+.input-box .button:active {
+    transform: translateY(-50%) scale(0.98);
+}
+
+@media screen and (max-width: 1000px) {
+    .main{
+        position: relative;
+        top: 70px;
+    }
+    .input-box {
+        height: 66px;
+        top: 70px;
+        margin: 0;
+        left:unset;
+    }
+
+    .input-box select {
+        background: #fff;
+        top: 70px;
+        width: 100px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .input-box {
+        height: 66px;
+        top: 70px;
+        margin: 0;
+    }
+
+    .input-box i {
+        left: 12px;
+        font-size: 25px;
+    }
+
+    .input-box input {
+        left: -50%;
+        padding: 0 112px 0 10px;
+    }
+
+    .input-box .button {
+        right: 12px;
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    .input-box select {
+        background: #fff;
+        top: 70px;
+        width: 100px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+form {
+    border: 0;
+}
+
+.person-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4F6A82;
+    border-radius: 10px;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+}
+
+.person-card ul {
+    list-style-type: none;
+}
+
+.person-card ul .departement {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+.person-card ul .samaccountname {
+    font-size: 1.5rem;
+    font-weight: 10;
+    margin-bottom: 20px;
+}
+
+.person-card ul table tr td {
+    text-align: left;
+    border-bottom: 1px solid #2F4457;
+    font-size: 0.825rem;
+}
+
+.person-card ul table tr td:first-child {
+    color: #a1adb6;
+    padding-right: 5px;
+}
+
+.person-cards-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.main-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-error h1{
+    font-size: 60px;
+}
+
+.main-error h2{
+    font-size: 30px;
+    color: white;
+}
+
+.main-error a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    height: 45px;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+    transition: .3s ;
+}
+
+.main-error a:hover{
+    background: rgba(231, 231, 231, 0.7);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+a.bouton{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    height: 45px;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+    transition: .3s ;
+}
+
+a.bouton:hover{
+    background: rgba(231, 231, 231, 0.7);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}

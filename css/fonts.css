@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/PT_Sans/PTSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PTSans-Bold";
+    src: url("../fonts/PT_Sans/PTSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url("../fonts/Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NotoSans-Bold";
+    src: url("../fonts/Noto_Sans/NotoSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: url("../fonts/Open_Sans/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Medium";
+    src: url("../fonts/Open_Sans/OpenSans-Medium.ttf");
+}
